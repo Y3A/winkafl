@@ -1,0 +1,1 @@
+.\afl-fuzz.exe -Y -s -i in -o out -t 2000 -- -fuzz_iterations 5000000 -- harness.exe @@
