@@ -1,7 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 """
-This is a modified version of the original pefile module.
+This is a modified version of the original pefile module, with some added and improved functionality used by peafl64.
+In the future, there might be a PR opened with the changes and this repo will be updated accordingly.
+Changed 2022 by Gal Kristal and Dina Teper
 
 pefile, Portable Executable reader module
 
