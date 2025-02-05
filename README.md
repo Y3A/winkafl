@@ -13,3 +13,11 @@
 5. Attach WinDbg to fuzzing VM
 6. Fuzz and wait for crash
 7. Use `post_crash/dump_sample.py` to extract crashing sample
+
+# FAQ
+
+**Q: Why does my winafl return `[-] PROGRAM ABORT : No instrumentation detected`**?
+
+**A:** This is likely due to the offsets changing across Windows versions.
+Modify the pid filtering shellcode in `asm_stubs.py` to match the implementation of `PsGetCurrentProcessId()` on your machine.
+The current offset is for Windows 11 23H2.
